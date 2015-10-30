@@ -238,16 +238,19 @@ div#slider figure {
   animation: 30s slidy infinite; 
 }
 
+/* HACK Section */
+.hack-device{
+  background-color: #f1633c;
+}
 
+.hacking-code{
+  margin-top: 40px;
+}
 
-
-
-
-
-
-
-
-
+canvas{
+        border: 1px black solid;
+        background-color: rgba(255,255,255,0.8);
+      }
 
 
 

@@ -53,7 +53,7 @@
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right up">
           <li class="hvr-radial-out"><a href="#about-id">About</a></li>
-          <li class="hvr-radial-out"><a href="#">Register</a></li>
+          <li class="hvr-radial-out"><a href="#" data-toggle="modal" data-target="#myModal">Register</a></li>
           <li class="hvr-radial-out"><a href="#">Hack</a></li>
           <li class="hvr-radial-out"><a href="#">Contact</a></li>
         </ul>
@@ -78,6 +78,7 @@
 </div>
 <!-- END OF TOP SECTION` -->
 <div class="container-fluid about-main" id="about-id">
+<!-- ABOUT SECTION` -->
     <div class="col-lg-5 col-md-4 about-img pull-left">
       <div class="row">
       <div id="slider">
@@ -103,14 +104,34 @@
         <br>
         <p>It's not just all work... we will have consoles set up to play games if you want to take a breather. <br> The event will be catered for by GMIT Catering Company & Papa Johns Pizza - so food will be provided on both days.</p>
         <p>In the spirt of collaboration we are going to have quick pitches on the Wednesday, so people can join teams or find people to join theirs. Nothing fancy is needed for the pitches, just follow this format: who you are, your idea for an app, problem your solving, how you will solve it and the app name.
-        </ul>
-        <br>
-        Follow: @GMITCompSociety
+        <br><br>
+        <i class="fa fa-twitter"></i> @GMITCompSociety <br>
+        <i class="fa fa-facebook-official"></i> GMITComputerSociety
         </p>
   </div>
 </div>
+
+<!-- END OF ABOUT SECTION` -->
+<div class="clearfix" class="smallspace">
+  
+</div>
+<!-- HACK SECTION` -->
+    <div class="col-lg-5 col-md-4 hacking-code pull-left">
+      <div class="row">
+        <canvas id="canvas-game"></canvas>
+    </div>
+  <div class="col-lg-7 col-md-8 about pull-right">
+     <div class="row">
+       <h1>HACK</h1>
+       
+  </div>
+</div>
+
+<!-- END OF HACK SECTION` -->
 </div>
 </div>
+
+<!-- MODAL SECTION -->
 <div class="modal fade" id="myModal">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -135,5 +156,6 @@
       });
   });
 </script>
+<script src="assets/js/cavas-script.js"></script>
 </body>
 </html>
