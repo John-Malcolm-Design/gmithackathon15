@@ -1,12 +1,21 @@
 /* Global */
 body {
-  background-color: #faf6ec;
+  background-color: #f1633c;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 17px;
   color: white;
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
+}
+
+a:link, a:hover, a:active, a:focus, a:visited{
+  color: white;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
 }
 
 hr {
@@ -215,15 +224,15 @@ img.logo {
 }
 
 @keyframes slidy {
-0% { left: 0%; }
-20% { left: 0%; }
-25% { left: -100%; }
-45% { left: -100%; }
-50% { left: -200%; }
-70% { left: -200%; }
-75% { left: -300%; }
-95% { left: -300%; }
-100% { left: -400%; }
+  0% { left: 0%; }
+  20% { left: 0%; }
+  25% { left: -100%; }
+  45% { left: -100%; }
+  50% { left: -200%; }
+  70% { left: -200%; }
+  75% { left: -300%; }
+  95% { left: -300%; }
+  100% { left: -400%; }
 }
 
 div#slider { overflow: hidden; }
@@ -247,15 +256,60 @@ div#slider figure {
   margin-top: 40px;
 }
 
-canvas{
-        border: 1px black solid;
-        background-color: rgba(255,255,255,0.8);
-      }
+.Flexible-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.Flexible-container iframe,   
+.Flexible-container object,  
+.Flexible-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#contact-id{
+  background-color: #f1633c;
+}
+
+.contact{
+  padding: 0px 40px;
+  background-color: #f1633c;
+  height: 500px;
+}
+
+.contact-map {
+  background-color: #f1633c;
+}
+
+#about-id{
+  display: block;
+  height: 5px; /*same height as header*/
+  margin-top: 400px; /*same height as header*/
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 1200px) {
+    .typed-cursor{
+      display: none;
+    }
+}
 
 
+@media only screen and (max-width: 995px) {
+    .contact-map{
+      display: none;
+    }
+}
 
-
-
-
-
-
+@media only screen and (max-width: 770px) {
+   img.logo {
+  display: none;
+}
+}
