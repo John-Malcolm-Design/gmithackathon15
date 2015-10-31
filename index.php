@@ -143,7 +143,7 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
       <li>Thursday: 9am - 9pm</li>
     </ul>
     <br>
-    <p>It's not just all work... we will have consoles set up to play games if you want to take a breather. <br> The event will be catered for by GMIT Catering Company & Papa Johns Pizza - so food will be provided on both days.</p>
+    <p>It's not all work... we will have consoles set up to play games if you want to take a breather. <br> The event will be catered for by GMIT Catering Company & Papa Johns Pizza - so food will be provided on both days.</p>
     <p>In the spirt of collaboration we are going to have quick pitches on the Wednesday, so people can join teams or find people to join theirs. Nothing fancy is needed for the pitches, just follow this format: who you are, your idea for an app, problem your solving, how you will solve it and the app name.
       <br><br>
       <i class="fa fa-twitter" id="contact-anchor"></i> <a href="https://twitter.com/GMITCompSociety">@GMITCompSociety</a><br>
@@ -158,7 +158,7 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
 
 <!-- CONTACT SECTION -->
 <div class="container-fluid" id="contact-id">
-<div class="col-lg-5 col-md-4 contact pull-left">
+<div class="col-lg-5 col-md-6 contact pull-left">
  <div class="row">
    <h1>Get in touch</h1>
 
@@ -185,7 +185,7 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
 						</div>
 					</div>
 					<div class="form-group">
-						<label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
+						<label for="human" class="col-sm-2 control-label">2 + 3 =</label>
 						<div class="col-sm-10">
 							<input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
 							<?php echo "<p class='text-danger'>$errHuman</p>";?>
@@ -211,7 +211,7 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
 		<img class="sponsor" src="/assets/img/sponsors/carlow.png"/>
 	</div>
 </div>
-<div class="col-lg-7 col-md-8 contact-map pull-right">
+<div class="col-lg-7 col-md-6 col-sm-12 contact-map pull-right">
   <div class="row Flexible-container">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9542.468253864767!2d-9.014890100786012!3d53.27848060031808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485b96cd4bcf0eef%3A0x230f1257a688d75!2sGalway+Mayo+Institute+of+Technology%2C+Old+Dublin+Rd%2C+Galway!5e0!3m2!1sen!2sie!4v1446225261678" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
   </div>
@@ -239,7 +239,7 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
 <script>
   $(function(){
     $(".codehack").typed({
-      strings: ["CODE. HACK. CREATE.", "Programming, Prizes &amp; Pizza."],
+      strings: ["CODE. HACK. CREATE.", "Programming, Prizes &amp; Pizza.","CODE. HACK. CREATE."],
       typeSpeed: 50,
       backDelay: 1000
     });
