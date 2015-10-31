@@ -1,64 +1,18 @@
-<?php
-/* Set e-mail recipient */
-$myemail = "john@gmithackathon.xyz";
+<?PHP
+  // form handler
+  if($_POST && isset($_POST['inputName'],$_POST['inputEmail'], $_POST['inputMssage'])) {
 
-/* Check all form inputs using check_input function */
-$email = check_input($_POST['exampleInputEmail1'], "Your E-mail Address");
-$message = check_input($_POST['messageInput'], "Your Message");
+  	$nname = $_POST['inputName'];
+    $email = $_POST['inputEmail'];
+    $subject = "GMIT Hackathon Enquiry";
+    $message = $_POST['inputMssage'];
 
-/* If e-mail is not valid show error message */
-if (!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/", $email))
-{
-show_error("Invalid e-mail address");
-}
-/* Let's prepare the message for the e-mail */
+      $to = "john@gmithackathon.xyz";
+      $headers = "From: ronan@gmithackathon.xyz" . "\r\n";
+      mail($to, $subject, $message, $headers);
+      header("Location: http://www.gmithackathon.xyz/");
+      exit;
+    }
 
-$subject = "GMIT Hackathon Contact Form";
-
-$message = "
-
-Someone has sent you a message using your contact form:
-
-Email: $email
-
-Message:
-$message
-
-";
-
-/* Send the message using mail() function */
-mail($myemail, $subject, $message);
-
-/* Redirect visitor to the thank you page */
-header('Location: http://gmithackathon.xyz');
-exit();
-
-/* Functions we used */
-function check_input($data, $problem='')
-{
-$data = trim($data);
-$data = stripslashes($data);
-$data = htmlspecialchars($data);
-if ($problem && strlen($data) == 0)
-{
-show_error($problem);
-}
-return $data;
-}
-
-function show_error($myError)
-{
-?>
-<html>
-<body>
-
-<p>Please correct the following error:</p>
-<strong><?php echo $myError; ?></strong>
-<p>Hit the back button and try again</p>
-
-</body>
-</html>
-<?php
-exit();
-}
+  }
 ?>

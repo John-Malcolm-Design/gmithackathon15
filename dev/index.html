@@ -124,12 +124,16 @@
    <h1>Get in touch</h1>
    <form name="contactform" method="post" action="http://gmithackathon.xyz/dev/mailer.php" role="form">
   <div class="form-group">
+    <label for="exampleInputEmail1">Your Name</label>
+    <input type="name" class="form-control" id="inputName" placeholder="Name">
+  </div>
+  <div class="form-group">
     <label for="exampleInputEmail1">Your Email</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">Your Message</label>
-    <textarea class="form-control" rows="3" placeholder="Message" id="messageInput" ></textarea>
+    <textarea class="form-control" rows="3" placeholder="Message" id="inputMessage" ></textarea>
   </div>
   <button type="submit" class="btn btn-default">Submit</button>
 </form>
