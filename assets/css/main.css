@@ -333,3 +333,16 @@ div#slider figure {
 
 }
 
+.sponsors{
+	padding: 10px 20px;
+	background-color: white;
+}
+
+.sponsor{
+	height: 60px;
+	padding: 7px;
+}
+
+.headwhite{
+	color: #f1633c;
+}
