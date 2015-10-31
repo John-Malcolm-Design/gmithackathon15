@@ -308,8 +308,28 @@ div#slider figure {
     }
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 800px) {
    img.logo {
-  display: none;
+    display: none;
+  }
+
+  #headerwrap{
+    padding-top: 40px;
+    height: 400px;
+    min-height: 400px;
+    padding-bottom: 40px;
+  }
+
 }
+
+@media only screen and (max-width: 530px) {
+
+  #headerwrap{
+    padding-top: 40px;
+    height: 450px;
+    min-height: 400px;
+    padding-bottom: 40px;
+  }
+
 }
+
